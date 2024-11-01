@@ -11,11 +11,21 @@
 <body>
     <main class="card">
       <figure class="product-image-container">
-        <img src="images/image-product-mobile.jpg" alt="The bottle of Gabrielle perfume by CHANEL." 
-             class="mobile-image">
-        <img src="images/image-product-desktop.jpg" alt="The bottle of Gabrielle perfume by CHANEL." 
-             class="desktop-image">
-      </figure>
+        <img 
+            src="images/image-product-mobile.jpg" 
+            alt="The bottle of Gabrielle perfume by CHANEL." 
+            class="mobile-image" 
+            srcset="images/image-product-mobile.jpg 600w" 
+            sizes="(max-width: 600px) 100vw, (min-width: 601px) 50vw"
+            loading="lazy">
+        <img 
+            src="images/image-product-desktop.jpg" 
+            alt="The bottle of Gabrielle perfume by CHANEL." 
+            srcset="images/image-product-desktop.jpg 1200w" 
+            sizes="(max-width: 600px) 100vw, (min-width: 601px) 50vw"
+            class="desktop-image"
+            loading="lazy">
+    </figure>
       <div class="product-content">
         <figcaption class="product-category">Perfume</figcaption>
         <h1>Gabrielle Essence Eau De Parfum</h1>
